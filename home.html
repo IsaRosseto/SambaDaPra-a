@@ -1,0 +1,225 @@
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Background animation</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+      background-color: #000;
+    }
+
+    header {
+      background-color: #000;
+      padding: 40px 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000; /* Para garantir que o cabeçalho fique acima de outros elementos */
+      height: 20px;
+    }
+
+    .container {
+      width: 50%;
+    }
+
+    .container ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      margin-left: 15px;
+    }
+
+    .container ul li {
+      margin-left: 30px;
+    }
+
+    .container ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .container ul li a:hover {
+      color: #ff4500;
+    }
+
+    .text-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .text-container h1{
+      margin: 0;
+      font-size: 150px;
+      color: rgba(225,225,225, .01);
+      background-image: url("https://img.freepik.com/fotos-premium/fundo-colorido-com-um-padrao-de-arco-iris_274326-746.jpg?w=1060");
+      background-repeat: repeat;
+      -webkit-background-clip:text;
+      animation: animate 15s ease-in-out infinite;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    @keyframes animate {
+      0%, 100% {
+        background-position: left top;
+      }
+      25% {
+        background-position: right bottom;
+      }
+      50% {
+        background-position: left bottom;
+      }
+      75% {
+        background-position: right top;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <ul>
+      <li><a href="#nossa-historia">Quem somos</a></li>
+      <li><a href="#galeria">Galeria de fotos</a></li>
+      <li><a href="#doar">Quero ajudar</a></li>
+      <li><a href="#">Entre em contato</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="text-container">
+  <h1>Samba Da Praça</h1>
+</div>
+
+
+<section id="nossa-historia">
+  <div class="texto-sobreposto">
+    <h2 style="color: #ffffff;">QUEM SOMOS</h2>
+  </div>
+  <div class="texto-abaixo">
+      <p>O "<span class="colorful-line">SAMBA DA PRAÇA</span>" encontra-se situado no coração pulsante do bairro de São Bernardo do Campo (SP), consolidando-se como um símbolo inegável de resistência cultural e solidariedade comunitária. </p>
+      <p> Sua trajetória é marcada por uma dedicação incansável à preservação e disseminação das raízes do samba, proporcionando um espaço acolhedor para artistas locais e entusiastas da música. </p>
+        <p> Além de seu papel vital na promoção da cultura local, o projeto estende sua influência benéfica para além das fronteiras artísticas, estendendo uma mão amiga às famílias em condições de vulnerabilidade por meio da distribuição regular de cestas básicas e programas de apoio crucial. </p> <p> Por meio de sua atuação multifacetada, o "<span class="colorful-line">SAMBA DA PRAÇA</span>" se destaca como um farol de esperança e coesão social, promovendo não apenas a melodia contagiante do samba, mas também uma mensagem de solidariedade e união que ressoa por toda a comunidade.</p>
+    </div>
+  <div class="background-image"></div>
+</section>
+
+
+<section id="galeria">
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <video controls>
+        <source src="https://drive.google.com/uc?export=download&id=14yZN3g594lMxxqvDJ_4V9S-VLBJtKOFM" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="https://media.discordapp.net/attachments/1005223328451141712/1170593298608566332/0b42a456-9939-4e83-86b0-b6a25d72d171.png?ex=65599af6&is=654725f6&hm=9644fbdf49c5677ac4e10ec889e5c685bc416461461b51d54fc30654ad1364ac&=&width=1177&height=662">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="https://scontent.fcgh17-1.fna.fbcdn.net/v/t39.30808-6/396711658_350096260887507_5921603534223514127_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeElDhqDxnfZZdE8BpqIRtupgm_-9HPie9SCb_70c-J71GfEjnIGShhTBaAblPtQuTsdn7aSyjK_zK0UsLjl3Cuo&_nc_ohc=WBzDWqJYjlsAX-0JMJz&_nc_zt=23&_nc_ht=scontent.fcgh17-1.fna&oh=00_AfC8ChxHeaD_usBqc9gyCZYo7GauM_Mozf4sW0zxBYeMng&oe=654C1DE2">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="https://scontent.fcgh17-1.fna.fbcdn.net/v/t39.30808-6/396717858_350096180887515_1366658422877622036_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGHTwF6Xgi2ymltSpQiW8m5YzXb5Tw3rBRjNdvlPDesFOHTv9W5xvoe2a4dMhyrVXMMtSBZ4WoJbO8bcdN-6RPX&_nc_ohc=rLIcRl1xnSUAX87137L&_nc_zt=23&_nc_ht=scontent.fcgh17-1.fna&oh=00_AfDhmpXNqsU6Aq0V-Heoui1x4NylrZR17xZvhuMsk9BwCw&oe=654C971B">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="https://media.discordapp.net/attachments/1005223328451141712/1170595484788871209/image.png?ex=65599d00&is=65472800&hm=4934f0da97a057abbe32e796c6c161e588389541439ecd0b5e197e0bbd8713c2&=&width=525&height=392">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="https://scontent.fcgh17-1.fna.fbcdn.net/v/t39.30808-6/396715174_350096157554184_781512838185364291_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFJBtYf4W-optIPBaeRLxKKUT_Os5koihNRP86zmSiKE-zAaxRr02DdMjKwImQuNICjqf483amWCWzTUhR4LGYO&_nc_ohc=Hzb5hk0VBH4AX9s5eGv&_nc_zt=23&_nc_ht=scontent.fcgh17-1.fna&oh=00_AfAGBqexV7KO2kslyw99gdWiaelSvLFdYcxx3Gw3uWepDQ&oe=654CAAF9">
+    </div>
+
+  </div>
+
+  <div class="thumbnail-container">
+    <img class="thumbnail" src="https://media.discordapp.net/attachments/1005223328451141712/1170605608412659762/image.png?ex=6559a66d&is=6547316d&hm=1935f9c82f1da1624996b4592563932057eab68550b203a090ba03fb5f694f74&=&width=1248&height=662" onclick="currentSlide(1)" style="width:100px">
+    <img class="thumbnail" src="https://media.discordapp.net/attachments/1005223328451141712/1170593298608566332/0b42a456-9939-4e83-86b0-b6a25d72d171.png?ex=65599af6&is=654725f6&hm=9644fbdf49c5677ac4e10ec889e5c685bc416461461b51d54fc30654ad1364ac&=&width=1177&height=662" onclick="currentSlide(2)" style="width:100px">
+    <img class="thumbnail" src="https://scontent.fcgh17-1.fna.fbcdn.net/v/t39.30808-6/396711658_350096260887507_5921603534223514127_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeElDhqDxnfZZdE8BpqIRtupgm_-9HPie9SCb_70c-J71GfEjnIGShhTBaAblPtQuTsdn7aSyjK_zK0UsLjl3Cuo&_nc_ohc=WBzDWqJYjlsAX-0JMJz&_nc_zt=23&_nc_ht=scontent.fcgh17-1.fna&oh=00_AfC8ChxHeaD_usBqc9gyCZYo7GauM_Mozf4sW0zxBYeMng&oe=654C1DE2" onclick="currentSlide(3)" style="width:100px">
+    <img class="thumbnail" src="https://scontent.fcgh17-1.fna.fbcdn.net/v/t39.30808-6/396717858_350096180887515_1366658422877622036_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGHTwF6Xgi2ymltSpQiW8m5YzXb5Tw3rBRjNdvlPDesFOHTv9W5xvoe2a4dMhyrVXMMtSBZ4WoJbO8bcdN-6RPX&_nc_ohc=rLIcRl1xnSUAX87137L&_nc_zt=23&_nc_ht=scontent.fcgh17-1.fna&oh=00_AfDhmpXNqsU6Aq0V-Heoui1x4NylrZR17xZvhuMsk9BwCw&oe=654C971B" onclick="currentSlide(4)" style="width:100px">
+    <img class="thumbnail" src="https://media.discordapp.net/attachments/1005223328451141712/1170595484788871209/image.png?ex=65599d00&is=65472800&hm=4934f0da97a057abbe32e796c6c161e588389541439ecd0b5e197e0bbd8713c2&=&width=525&height=392" onclick="currentSlide(5)" style="width:100px">
+    <img class="thumbnail" src="https://scontent.fcgh17-1.fna.fbcdn.net/v/t39.30808-6/396715174_350096157554184_781512838185364291_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFJBtYf4W-optIPBaeRLxKKUT_Os5koihNRP86zmSiKE-zAaxRr02DdMjKwImQuNICjqf483amWCWzTUhR4LGYO&_nc_ohc=Hzb5hk0VBH4AX9s5eGv&_nc_zt=23&_nc_ht=scontent.fcgh17-1.fna&oh=00_AfAGBqexV7KO2kslyw99gdWiaelSvLFdYcxx3Gw3uWepDQ&oe=654CAAF9" onclick="currentSlide(6)" style="width:100px">
+  </div>
+</section>
+
+<section id="doar">
+  <div class="textoDoar">
+  <p>Contribuir com o projeto "<span class="colorful-line">SAMBA DA PRAÇA</span>" é como regar as raízes da solidariedade e colher os frutos da união, harmonizando não apenas os acordes do samba, mas também os corações da comunidade.</p>
+  </div>
+  <div class="botoes">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScnaA-if5YMM-olnrm2J1SsUHLEqc2odzOAyncKC34mmlr5gw/viewform" target="_blank" class="btn">Quero ser voluntário</a>
+    <a href="teste.html" target="_blank" class="btndoar">Quero fazer uma doação</a>
+  </div>
+</section>
+
+
+
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    const thumbnails = document.getElementsByClassName("thumbnail");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < thumbnails.length; i++) {
+      thumbnails[i].style.border = "2px solid white";
+    }
+    slides[slideIndex - 1].style.display = "block";
+    thumbnails[slideIndex - 1].style.border = "2px solid red";
+  }
+
+  $(".cta").click(function(){
+    $(this).addClass("active").delay(300).queue(function(next){
+      $(this).removeClass("active");
+      next();
+    });
+  });
+</script>
+
+</body>
+

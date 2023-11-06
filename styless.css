@@ -1,0 +1,224 @@
+#galeria {
+    width: 100%;
+    margin: 5% 0;
+}
+.slideshow-container {
+    max-width: 800px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides video {
+    width: 100%;
+    height: 400px; /* Altura desejada para o vídeo */
+    object-fit: cover; /* Manter a proporção do vídeo */
+}
+
+.mySlides img {
+    width: 100%;
+    height: 400px; /* Altura desejada para as imagens */
+    object-fit: cover; /* Manter a proporção das imagens */
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.thumbnail-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    border: 2px solid white;
+    margin: 0 2px;
+    cursor: pointer;
+    width: 100px; /* Largura desejada para as miniaturas */
+    height: 60px; /* Altura desejada para as miniaturas */
+    object-fit: cover; /* Manter a proporção da miniatura */
+}
+/* < ------------------------------------- SECTION NOSSA HISTORIA --------------------------> */
+#nossa-historia {
+    margin-bottom: 25%;
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100vh; /* Ajuste a altura conforme necessário */
+}
+
+.texto-sobreposto {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+    font-size: 36px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+}
+
+.texto-abaixo {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-align: center;
+    width: 65%;
+    color: white;
+    margin: auto;
+    top: 58%;
+    position: relative;
+}
+
+.background-image {
+    background-image: url('https://media.discordapp.net/attachments/1005223328451141712/1170754559778488330/nossa_historia_1920_x_400_px.png?ex=655a3126&is=6547bc26&hm=c8f3a42f8f2f2c7dbe54a8bdb9df8eb9837418b6bd58dca92d8db352dbfef103&=&width=1000&height=500');
+    background-size: cover;
+    width: 100%;
+    height: 400px; /* Ajuste a altura conforme necessário */
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.3); /* Ajuste o valor para escurecer ou clarear a imagem */
+    z-index: -1;
+}
+
+
+.colorful-line {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+}
+
+.iframe-container {
+    width: 800px;
+    height: 1985px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.iframe-container iframe {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 808px;
+    height: 1993px;
+    border: 0;
+    border-radius: 10px;
+    background: black; /* Cor de fundo personalizada, substitua conforme necessário */
+}
+
+/*                                    */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+#doar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    max-width: 800px;
+    margin: 15% auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn, .btndoar {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #d62828;
+    border: 2px solid #d62828;
+    margin: 0 20px;
+}
+
+.btn:hover {
+    background-color: #b30000;
+    border: 2px solid #b30000;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btndoar {
+    background-color: #2E8B57;
+    border: 2px solid #2E8B57;
+    margin: 0 20px;
+}
+
+.btndoar:hover {
+    background-color: #257642;
+    border: 2px solid #257642;
+}
+
+.textoDoar {
+    color: white;
+    width: 70%;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
